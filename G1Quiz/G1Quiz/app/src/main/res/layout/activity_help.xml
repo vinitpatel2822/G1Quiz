@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/theme_bg"
+    tools:context="com.mac.group7.g1quiz.HelpActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:background="@color/theme_bg"
+        android:text="\n-: Steps to Play :-\n"
+        android:textColor="#008ae6" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:textSize="22dp"
+        android:textColor="#0066cc"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+
+        android:text="\n1) Enter your name which distinguish you in the multi-player game. \n\n2) Each single question has 4 multiple choices in which he can choose one choice to answer. \n\n 3) Every correct answer has 1 point. User has to answer 10 questions. \n\n 4)At the end user will be able to see his score and also can play again or can exit the Quiz.\n\n\n\n\n" />
+
+
+</LinearLayout>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz Question And Answer"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="normal"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>-->

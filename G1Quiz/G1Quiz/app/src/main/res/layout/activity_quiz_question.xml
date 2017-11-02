@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    tools:context="com.mac.group7.g1quiz.QuizQuestion">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_fg_light"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding5dp"
+        android:weightSum="6" >
+
+        <TextView
+            android:id="@+id/txtSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Question"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutHeader"
+        android:background="@color/theme_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginQue"
+            android:gravity="center"
+
+            android:textColor="@color/theme_fg_dark"
+            android:textSize="20dp"
+            android:padding="@dimen/padding15dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/pickerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding15dp"
+            android:paddingBottom="@dimen/padding15dp"
+
+            />
+
+        <NumberPicker xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ansPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentContainer"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding15dp">
+        <Button
+            android:id="@+id/BtnSubmit"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_button"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/padding5dp"
+            android:singleLine="true"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutbtn"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Points: "
+            android:textColor="@color/theme_fg_dark"
+            android:textSize="@dimen/size10" />
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/size10"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/nav_button"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/layerMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/size6" />
+    </RelativeLayout>
+
+</RelativeLayout>

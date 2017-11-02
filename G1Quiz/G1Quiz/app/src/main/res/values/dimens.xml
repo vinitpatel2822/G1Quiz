@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleHeight">50dp</dimen>
+    <dimen name="size6">15sp</dimen>
+    <dimen name="size10">16sp</dimen>
+    <dimen name="padding5dp">5dp</dimen>
+    <dimen name="padding15dp">15dp</dimen>
+    <dimen name="marginQue">50dp</dimen>
+    <dimen name="stroke2dp">2dp</dimen>
+    <dimen name="summaryHeight">250dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>
+
